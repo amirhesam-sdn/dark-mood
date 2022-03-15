@@ -1,20 +1,11 @@
-const btnOff_On = document.querySelector(".mood");
-const logo = document.querySelector(".logo i");
-const titr = document.querySelector(".left h1");
-const text = document.querySelector(".left p");
-const icons = document.querySelectorAll(".icons i");
-const btn = document.querySelector(".btn button");
+const btn_Off_On = document.querySelector(".mood");
 
-btnOff_On.addEventListener("click", function () {
-  btnOff_On.classList.toggle("day");
-  btnOff_On.classList.toggle("white");
-  document.body.classList.toggle("bgblack");
-  logo.classList.toggle("white");
-  titr.classList.toggle("white");
-  text.classList.toggle("white");
-  btn.classList.toggle("btnday");
+btn_Off_On.addEventListener("click", function () {
+  document.body.classList.toggle("theme-dark");
 
-  for (let i = 0; i < list.length; i++) {
-    icons[i].classList.toggle("white");
+  if (document.body.classList.contains("theme-dark")) {
+    btn_Off_On.src = "./image/sun.png";
+  } else {
+    btn_Off_On.src = "./image/moon.png";
   }
 });
