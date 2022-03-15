@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.countainer {
+  width: 100%;
+}
+
+.white {
+  color: #fff;
+}
+
+.bgwhite {
+  background-color: #fff;
+}
+
+.bgblack {
+  background-color: #000;
+}
+
+.black {
+  color: #000;
+}
+
+/* -----header----- */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 0 120px 10px;
+}
+
+.header .logo {
+  font-size: 40px;
+  margin: 30px 0 0 0;
+  color: #888;
+  border: solid #ff5236 4px;
+  border-radius: 50%;
+}
+
+.header .logo:hover {
+  color: #ff5236;
+  cursor: pointer;
+}
+
+.header .menu {
+  margin: 45px 0 0 0;
+  position: relative;
+}
+
+.header .menu ul {
+  list-style-type: none;
+  margin-right: 60px;
+}
+
+.header .menu ul li {
+  display: inline;
+  padding: 0 15px;
+}
+
+.header .menu .mood {
+  display: inline;
+  font-size: 30px;
+  color: #888;
+  position: fixed;
+  right: 10px;
+  top: 35px;
+}
+
+.header .menu .mood:hover {
+  color: #ff5236;
+  cursor: pointer;
+}
+
+.dark::after {
+  content: "\00263E";
+}
+
+.day::after {
+  content: "\00263C";
+}
+
+.header .menu ul li a {
+  text-decoration: none;
+  color: #888;
+}
+
+.header .menu ul li a:hover {
+  color: #ff5236;
+}
+
+/* -----main----- */
+.main {
+  width: 100%;
+  margin: auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+
+.main .left h1 {
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.main .left h1 span {
+  color: #ff5236;
+}
+
+.main .left p {
+  font-size: 14px;
+}
+
+.main .left .btn {
+  margin-top: 15px;
+}
+
+.main .left .btn button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  border: none;
+}
+
+.btndark {
+  color: #000;
+  background-color: #fff;
+}
+
+.btnday {
+  color: #fff;
+  background-color: #000;
+}
+
+.main .left .btn button:hover {
+  color: #ff5236;
+}
+
+.main .left .icons {
+  margin-top: 150px;
+}
+
+.main .left .icons i {
+  padding: 0 20px 0 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.main .left .icons i:hover {
+  transform: translateY(-5px);
+}
+
+.main .right {
+  position: relative;
+}
+
+.main .right .img1 img {
+  width: 700px;
+  position: absolute;
+  right: 0px;
+  top: -60px;
+}
+
+.main .right .img1 img:hover {
+  transform: translateY(-40px);
+  transform: translateX(40px);
+}
+
+.main .right .img2 img {
+  width: 600px;
+  position: absolute;
+  right: 10px;
+  top: -200px;
+}
+
+.main .right .img2 img:hover {
+  transform: translateY(-40px);
+}
