@@ -144,6 +144,7 @@ body {
   position: absolute;
   right: 0px;
   top: -60px;
+  transition: 1s all;
 }
 
 .main .right .img1 img:hover {
@@ -156,6 +157,7 @@ body {
   position: absolute;
   right: 10px;
   top: -200px;
+  transition: 1s;
 }
 
 .main .right .img2 img:hover {
